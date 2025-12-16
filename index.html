@@ -1,1 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campbell Plumbing and Rooter | Simi Valley Plumber</title>
+
+  <meta name="description" content="Campbell Plumbing and Rooter is a full-service plumbing company serving Simi Valley, CA and surrounding areas. Water heaters, drain cleaning, sewer lines, leak detection, hydro jetting & emergency plumbing." />
+  <meta name="theme-color" content="#1E3A8A" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Campbell Plumbing and Rooter | Simi Valley Plumber" />
+  <meta property="og:description" content="Honest, reliable plumbing services in Simi Valley & surrounding areas." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --blue:#1E3A8A;
+      --orange:#F59E0B;
+      --dark:#0B1220;
+      --muted:#5B6475;
+      --line:#E6EAF2;
+      --bg:#ffffff;
+      --card:#F7F9FC;
+      --radius:18px;
+      --radius-lg:24px;
+      --shadow:0 10px 30px rgba(15,23,42,.1);
+      --max:1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--dark);
+      background:var(--bg);
+      line-height:1.55;
+    }
+
+    img { max-width:100%; display:block; }
+    a { text-decoration:none; color:inherit; }
+
+    .container {
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    /* Header */
+    header {
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.95);
+      border-bottom:1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 0;
+      gap:12px;
+    }
+
+    .brand {
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    .logo {
+      width:44px;
+      height:44px;
+      border-radius:12px;
+      padding:6px;
+      background:#fff;
+      border:1px solid var(--line);
+      object-fit:contain;
+    }
+
+    .brand-text strong { font-size:14px; }
+    .brand-text span { font-size:12px; color:var(--muted); }
+
+    nav {
+      display:none;
+      gap:18px;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .cta {
+      display:flex;
+      gap:10px;
+    }
+
+    .btn {
+      padding:12px 16px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:14px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid transparent;
+      cursor:pointer;
+    }
+
+    .btn-primary {
+      background:linear-gradient(180deg,var(--orange),#d97706);
+      color:#111;
+      box-shadow:0 10px 22px rgba(245,158,11,.3);
+    }
+
+    .btn-outline {
+      background:#fff;
+      border:1px solid var(--line);
+    }
+
+    /* Hero */
+    .hero {
+      padding:36px 0 24px;
+      background:
+        radial-gradient(900px 400px at 15% -10%, rgba(30,58,138,.15), transparent 60%),
+        radial-gradient(900px 400px at 90% 10%, rgba(245,158,11,.2), transparent 60%);
+    }
+
+    .hero-card {
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      background:#fff;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr;
+    }
+
+    .hero-main {
+      padding:24px;
+    }
+
+    .badge {
+      display:inline-block;
+      font-size:12px;
+      font-weight:700;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(30,58,138,.1);
+      color:var(--blue);
+      border:1px solid rgba(30,58,138,.2);
+    }
+
+    h1 {
+      margin:12px 0 10px;
+      font-size:34px;
+      line-height:1.15;
+    }
+
+    .sub {
+      color:var(--muted);
+      max-width:55ch;
+    }
+
+    .hero-actions {
+      display:flex;
+      gap:10px;
+      margin-top:16px;
+      flex-wrap:wrap;
+    }
+
+    /* Sections */
+    section { padding:32px 0; }
+
+    h2 {
+      font-size:22px;
+      margin-bottom:10px;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+
+    .card {
+      padding:16px;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      background:#fff;
+      box-shadow:0 8px 22px rgba(0,0,0,.05);
+    }
+
+    /* About */
+    .about {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+
+    .about-img {
+      border-radius:var(--radius-lg);
+      overflow:hidden;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+
+    .about-img img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* Contact */
+    .contact {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+
+    .ghl {
+      min-height:1000px;
+      position:relative;
+    }
+
+    .ghl iframe {
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    footer {
+      border-top:1px solid var(--line);
+      padding:24px 0 90px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* Mobile sticky CTA */
+    .mobile-cta {
+      position:fixed;
+      bottom:12px;
+      left:12px;
+      right:12px;
+      display:flex;
+      gap:10px;
+      z-index:60;
+      background:rgba(255,255,255,.95);
+      padding:10px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+
+    .mobile-cta a { flex:1; }
+
+    @media (min-width:860px) {
+      nav { display:flex; }
+      .hero-card { grid-template-columns:1.2fr .8fr; }
+      .about { grid-template-columns:1fr 1fr; }
+      .contact { grid-template-columns:.9fr 1.1fr; }
+      .grid { grid-template-columns:1fr 1fr; }
+      .mobile-cta { display:none; }
+      h1 { font-size:42px; }
+    }
+  </style>
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Plumber",
+    "name":"Campbell Plumbing and Rooter",
+    "telephone":"+1-520-313-0403",
+    "email":"contact@campbellplumbingandrooter.com",
+    "areaServed":"Simi Valley, CA",
+    "url":"https://campbellplumbingandrooter.com"
+  }
+  </script>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="brand">
+      <img class="logo" src="https://i.imgur.com/Ca37hMe.png" alt="Campbell Plumbing and Rooter logo">
+      <div class="brand-text">
+        <strong>Campbell Plumbing & Rooter</strong>
+        <span>Simi Valley, CA</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="cta">
+      <a class="btn btn-outline" href="#contact">Request Service</a>
+      <a class="btn btn-primary" href="tel:5203130403">Call Now</a>
+    </div>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <div class="hero-card">
+      <div class="hero-main">
+        <span class="badge">Family-Owned & Operated</span>
+        <h1>Honest, reliable plumbing in Simi Valley</h1>
+        <p class="sub">
+          Water heaters, drains, sewer lines, leak detection, hydro jetting & emergency plumbing —
+          handled with care and respect for your home.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request Service</a>
+          <a class="btn btn-outline" href="tel:5203130403">Call (520) 313-0403</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section id="services">
+  <div class="container">
+    <h2>Plumbing Services</h2>
+    <div class="grid">
+      <div class="card">Water Heater Repair & Replacement</div>
+      <div class="card">Drain Cleaning</div>
+      <div class="card">Sewer Line Inspections</div>
+      <div class="card">Sewer Line Replacement</div>
+      <div class="card">Leak Detection</div>
+      <div class="card">Hydro Jetting</div>
+      <div class="card">Emergency Plumbing</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Max</h2>
+    <div class="about">
+      <div class="about-img">
+        <img src="https://i.imgur.com/f7opKAs.jpeg" alt="Max, owner of Campbell Plumbing and Rooter, with his family">
+      </div>
+      <div class="card">
+        <p>
+          Max is a skilled plumbing tradesman with over 10 years of experience.
+          He built Campbell Plumbing and Rooter on honesty, reliability, and respect
+          for every home he works in.
+        </p>
+        <p>
+          When he’s not helping customers around the valley, Max enjoys spending time
+          with his family and giving back to the community.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Request Service</h2>
+    <div class="contact">
+      <div class="card">
+        <p><strong>Phone:</strong> <a href="tel:5203130403">(520) 313-0403</a></p>
+        <p><strong>Email:</strong> contact@campbellplumbingandrooter.com</p>
+        <p><strong>Service Area:</strong> Simi Valley & surrounding areas</p>
+      </div>
+
+      <div class="card ghl">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/PJKAIOXguroOfjKdJOj8"
+          title="Campbell Plumbing & Rooter Form">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Campbell Plumbing and Rooter. All rights reserved.
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="btn btn-outline" href="#contact">Request Service</a>
+  <a class="btn btn-primary" href="tel:5203130403">Call Now</a>
+</div>
+
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
 
