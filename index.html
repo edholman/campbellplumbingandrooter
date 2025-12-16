@@ -119,22 +119,6 @@
             padding: 60px 0;
         }
         
-        /* Emergency Banner */
-        .emergency-banner {
-            background-color: var(--emergency-red);
-            color: white;
-            padding: 12px 0;
-            text-align: center;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        
-        .emergency-banner a {
-            color: white;
-            text-decoration: underline;
-            margin-left: 5px;
-        }
-        
         /* Header Styles */
         header {
             background-color: white;
@@ -345,7 +329,7 @@
             margin-bottom: 15px;
         }
         
-        /* About Max Section - FIXED */
+        /* About Max Section - UPDATED with rotated image */
         .about-max {
             background-color: var(--light-gray);
         }
@@ -373,23 +357,28 @@
             max-width: 400px;
             border-radius: 8px;
             box-shadow: var(--shadow);
-            /* REMOVED rotation - image is now correct */
+            /* Rotate the image 90 degrees clockwise to make it upright */
+            transform: rotate(90deg);
+            /* Add margin to compensate for the rotation */
+            margin: 40px 0;
         }
         
         .photo-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            justify-content: center;
+            min-height: 500px; /* Ensure enough space for rotated image */
         }
         
         .photo-caption {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 60px; /* Increased margin to account for rotated image */
             font-style: italic;
             color: var(--text-gray);
             font-size: 0.95rem;
             max-width: 400px;
+            order: 2; /* Ensure caption comes after image */
         }
         
         .quote-box {
@@ -612,6 +601,16 @@
             
             .max-photo {
                 max-width: 300px;
+                transform: rotate(90deg); /* Keep rotation for mobile */
+                margin: 30px 0;
+            }
+            
+            .photo-container {
+                min-height: 400px; /* Adjusted for mobile */
+            }
+            
+            .photo-caption {
+                margin-top: 50px; /* Adjusted for mobile */
             }
             
             .floating-emergency {
@@ -660,22 +659,25 @@
             
             .max-photo {
                 max-width: 250px;
+                margin: 20px 0;
+            }
+            
+            .photo-container {
+                min-height: 350px;
+            }
+            
+            .photo-caption {
+                margin-top: 40px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Emergency Banner -->
-    <div class="emergency-banner">
-        <i class="fas fa-exclamation-triangle"></i> 24/7 Emergency Service • Call Now: 
-        <a href="tel:520-313-0403">(520) 313-0403</a>
-    </div>
-    
     <!-- Header -->
     <header>
         <div class="header-container container">
             <div class="logo-container">
-                <img src="https://i.imgur.com/yXH0k1b.jpeg" alt="Campbell Plumbing and Rooter" class="logo-img">
+                <img src="https://i.imgur.com/Jz4zrRy.png" alt="Campbell Plumbing and Rooter" class="logo-img">
                 <div class="location-tagline">Serving Simi Valley & Surrounding Areas</div>
             </div>
             
