@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campbell Plumbing and Rooter | Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #0057b8;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 25px;
+            color: #0057b8;
+        }
+        a {
+            color: #0057b8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            font-style: italic;
+            margin-top: 30px;
+            color: #666;
+        }
+        .company-name {
+            color: #0057b8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Campbell Plumbing and Rooter SMS Program Privacy Policy</h1>
+    
+    <p><strong>Last Updated:</strong> February 19, 2026<br>
+    <strong>Effective Date:</strong> February 19, 2026</p>
+    
+    <h2>1. Overview</h2>
+    <p>This Privacy Policy explains how Campbell Plumbing and Rooter (“we,” “us,” or “our”) collects, uses, and protects information in connection with our text messaging communications under the A2P 10DLC (Application-to-Person 10-Digit Long Code) framework.</p>
+    <p>We comply with the Telephone Consumer Protection Act (TCPA), CTIA Messaging Principles & Best Practices, and all applicable carrier and The Campaign Registry (TCR) requirements.</p>
+    
+    <h2>2. Information We Collect</h2>
+    <p>When you interact with our messaging services, we may collect:</p>
+    <ul>
+        <li><strong>Personal Information</strong> — such as your name, phone number, email, and service address if you provide them voluntarily through our website, lead forms, or other opt-in channels.</li>
+        <li><strong>Message Data</strong> — including content of messages, time sent or received, delivery confirmations, and opt-in/opt-out status.</li>
+        <li><strong>Technical Information</strong> — device type, carrier, and metadata to ensure reliable message delivery and compliance.</li>
+    </ul>
+    <p>We do not sell or share personal data with third parties for marketing purposes.</p>
+    
+    <h2>3. How We Use Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+        <li>Send you transactional, informational, or promotional messages that you have consented to receive regarding your plumbing service needs.</li>
+        <li>Respond to your service requests and provide estimates for plumbing work.</li>
+        <li>Schedule appointments and send service reminders.</li>
+        <li>Manage opt-in and opt-out preferences.</li>
+        <li>Monitor delivery and response rates to maintain compliance with carrier standards.</li>
+        <li>Prevent spam, fraud, and abuse of our messaging systems.</li>
+        <li>Fulfill legal and regulatory obligations related to A2P 10DLC campaigns.</li>
+    </ul>
+    
+    <h2>4. Opt-In and Consent</h2>
+    <p>By submitting your phone number through our website, contact forms, or other digital channels, you consent to receive text messages from Campbell Plumbing and Rooter regarding your plumbing service requests, estimates, appointments, and related communications.</p>
+    <p>Your consent is not required as a condition of purchasing any goods or services. Message and data rates may apply.</p>
+    
+    <h2>5. Opt-Out</h2>
+    <p>You may opt out at any time by replying with STOP to any of our text messages.</p>
+    <p>After opting out, you will receive a final message confirming your unsubscribe request.</p>
+    <p>You may also contact us directly at:</p>
+    <ul>
+        <li>📧 <a href="mailto:contact@campbellplumbingandrooter.com">contact@campbellplumbingandrooter.com</a></li>
+        <li>📞 <a href="tel:520-313-0403">(520) 313-0403</a></li>
+    </ul>
+    
+    <h2>6. Data Retention and Security</h2>
+    <p>We retain message and opt-in records as required by The Campaign Registry and carriers for auditing and compliance purposes.</p>
+    <p>We use commercially reasonable safeguards to protect your information from unauthorized access or disclosure.</p>
+    
+    <h2>7. Data Sharing</h2>
+    <p>We may share limited message and campaign data with:</p>
+    <ul>
+        <li>Twilio or other registered messaging providers for delivery.</li>
+        <li>The Campaign Registry (TCR) for campaign registration and compliance verification.</li>
+        <li>Law enforcement or regulators when legally required.</li>
+    </ul>
+    <p>We never sell or trade your phone number or personal information.</p>
+    
+    <h2>8. Children’s Privacy</h2>
+    <p>Our messaging services are intended for individuals 18 years and older.</p>
+    <p>We do not knowingly collect personal data from minors.</p>
+    
+    <h2>9. Updates to This Policy</h2>
+    <p>We may update this Privacy Policy periodically. Changes will be posted with an updated "Last Updated" date. Your continued use of our messaging services indicates your acceptance of the revised policy.</p>
+    
+    <h2>10. Contact Us</h2>
+    <p>For questions or concerns about this Privacy Policy or our SMS practices, contact:</p>
+    <p>
+        <strong>Campbell Plumbing and Rooter</strong><br>
+        📍 Serving Simi Valley, CA & Surrounding Areas<br>
+        📧 <a href="mailto:contact@campbellplumbingandrooter.com">contact@campbellplumbingandrooter.com</a><br>
+        📞 <a href="tel:520-313-0403">(520) 313-0403</a><br>
+        ⏰ 24/7 Emergency Service Available
+    </p>
+    
+    <p class="last-updated"><em>Last Updated: February 19, 2026</em></p>
+</body>
+</html>
