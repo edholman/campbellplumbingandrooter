@@ -671,6 +671,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="/assets/lead-form.css">
 </head>
 <body>
     <!-- Header -->
@@ -876,7 +877,7 @@
         </div>
     </section>
     
-    <!-- Lead Capture Section with GoHighLevel Form - FIXED VERSION -->
+    <!-- Lead Capture Section (native form, posts to CRM) -->
     <section class="lead-capture" id="contact">
         <div class="container">
             <div class="section-title">
@@ -888,24 +889,52 @@
                 <h3 style="color: var(--logo-blue); text-align: center; margin-bottom: 20px;">Request Service or Free Estimate</h3>
                 <p style="text-align: center; color: var(--text-gray); margin-bottom: 30px;">Fill out the form below and we'll contact you within 30 minutes.</p>
                 
-                <!-- GoHighLevel Form - Direct Embed -->
-                <iframe 
-                    src="https://api.leadconnectorhq.com/widget/form/PJKAIOXguroOfjKdJOj8"
-                    style="width:100%;height:600px;border:none;border-radius:8px"
-                    id="inline-PJKAIOXguroOfjKdJOj8"
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="Campbell Plumbing & Rooter"
-                    data-height="600"
-                    data-layout-iframe-id="inline-PJKAIOXguroOfjKdJOj8"
-                    data-form-id="PJKAIOXguroOfjKdJOj8"
-                    title="Campbell Plumbing & Rooter Contact Form">
-                </iframe>
+                <!-- Lead form (posts to the CRM via /assets/lead-form.js) -->
+                <form class="lead-form" data-form-name="website_contact" novalidate>
+                    <div class="lead-row">
+                        <div><label for="cf-first">First name</label><input id="cf-first" type="text" name="first_name" autocomplete="given-name"></div>
+                        <div><label for="cf-last">Last name</label><input id="cf-last" type="text" name="last_name" autocomplete="family-name"></div>
+                    </div>
+                    <div class="lead-row">
+                        <div><label for="cf-phone">Phone</label><input id="cf-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required></div>
+                        <div><label for="cf-email">Email <span class="opt">(optional)</span></label><input id="cf-email" type="email" name="email" autocomplete="email"></div>
+                    </div>
+                    <label for="cf-address">Service address <span class="opt">(optional)</span></label>
+                    <input id="cf-address" type="text" name="address" autocomplete="street-address">
+                    <div class="lead-row">
+                        <div><label for="cf-city">City</label><input id="cf-city" type="text" name="city" autocomplete="address-level2"></div>
+                        <div><label for="cf-zip">ZIP code</label><input id="cf-zip" type="text" name="postal_code" autocomplete="postal-code" inputmode="numeric"></div>
+                    </div>
+                    <div class="lead-row">
+                        <div><label for="cf-service">What do you need?</label>
+                            <select id="cf-service" name="service_type">
+                                <option value="">Select one</option>
+                                <option>Leak or burst pipe</option>
+                                <option>Clogged drain</option>
+                                <option>Sewer line or rooter service</option>
+                                <option>Water heater</option>
+                                <option>Toilet, faucet or fixture</option>
+                                <option>Free estimate for a project</option>
+                                <option>Something else</option>
+                            </select></div>
+                        <div><label for="cf-urgency">How soon?</label>
+                            <select id="cf-urgency" name="urgency">
+                                <option value="">Select one</option>
+                                <option>Emergency, right now</option>
+                                <option>Today</option>
+                                <option>This week</option>
+                                <option>Just getting an estimate</option>
+                            </select></div>
+                    </div>
+                    <label for="cf-msg">Tell us about the problem <span class="opt">(optional)</span></label>
+                    <textarea id="cf-msg" name="message" maxlength="1000"></textarea>
+                    <div class="lead-hp" aria-hidden="true"><label for="cf-website">Website</label><input id="cf-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+                    <label class="lead-consent" data-consent="transactional"><input type="checkbox" name="sms_transactional" value="yes"><span class="lead-consent-text">By checking this box, I consent to receive transactional messages from Campbell Plumbing and Rooter LLC at the phone number provided related to my plumbing inquiries, consultations, or services requested from Campbell Plumbing and Rooter LLC. These messages may include appointment reminders, confirmations, and account notifications. Message frequency may vary. Message &amp; Data rates may apply. Reply HELP for help or STOP to opt-out. Consent is not a condition of purchase.</span></label>
+                    <label class="lead-consent" data-consent="marketing"><input type="checkbox" name="sms_marketing" value="yes"><span class="lead-consent-text">By checking this box, I consent to receive marketing messages from Campbell Plumbing and Rooter LLC at the phone number provided, including special offers, updates, and promotional content. Message frequency may vary. Message &amp; Data rates may apply. Reply HELP for help or STOP to opt-out. Consent is not a condition of purchase.</span></label>
+                    <button type="submit">Request Service</button>
+                    <div class="lead-error" role="alert" hidden></div>
+                </form>
+                <div class="lead-success" hidden><strong>Thanks! We got your request.</strong><p>We'll contact you shortly. For an emergency, call us now at <a href="tel:520-313-0403">(520) 313-0403</a>.</p></div>
                 
                 <div class="form-cta-section">
                     <h4 style="color: var(--logo-blue); margin-bottom: 15px;">Prefer to Call?</h4>
@@ -978,8 +1007,7 @@
         <span class="call-text">CALL NOW</span>
     </a>
     
-    <!-- GoHighLevel Form Script -->
-    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    <script src="/assets/lead-form.js"></script>
     
     <!-- Custom JavaScript -->
     <script>
