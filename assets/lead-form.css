@@ -18,3 +18,5 @@
 .lead-success { padding: 1.4rem; border-radius: 10px; background: #eaf4ea; color: #1f4d25; text-align: center; }
 .lead-success strong { display: block; font-size: 1.2rem; margin-bottom: 0.4rem; }
 .lead-success a { color: var(--logo-blue, #0057b8); font-weight: 700; }
+.lead-form .lead-links { text-align: center; font-size: 0.88rem; margin: 0.9rem 0 0; color: var(--text-gray, #495057); }
+.lead-form .lead-links a { color: var(--logo-blue, #0057b8); text-decoration: underline; }
