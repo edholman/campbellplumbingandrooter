@@ -1,5 +1,5 @@
 /*
- * Campbell Plumbing and Rooter lead form -> CRM (https://sms.whyrebate.com/leads/campbell)
+ * Campbell Plumbing and Rooter lead form -> CRM (https://crm.campbellplumbingandrooter.com/leads/campbell)
  *
  * Handles <form class="lead-form">. SMS consent is two separate OPTIONAL checkboxes (A2P):
  *   sms_transactional / sms_marketing (booleans) + consent_text_transactional / consent_text_marketing (exact wording).
@@ -9,7 +9,7 @@
 (function () {
   'use strict';
 
-  var ENDPOINT = 'https://sms.whyrebate.com/leads/campbell';
+  var ENDPOINT = 'https://crm.campbellplumbingandrooter.com/leads/campbell';
   var STORE_KEY = 'campbell_attribution';
   var ATTR_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'];
   var MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
